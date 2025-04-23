@@ -1,0 +1,59 @@
+.form_container {
+  background-color: rgb(61, 74, 223);
+  padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.logo {
+  width: 130px;
+}
+.login_form_container {
+  padding: 20px;
+}
+.login_form_container p {
+  color: rgb(36, 35, 35);
+}
+.login_form_container label {
+  color: rgb(55, 53, 53);
+  font-size: 15px;
+  display: block;
+}
+.phone_input_container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 16px;
+}
+
+.country_code {
+  font-size: 16px;
+  color: #333;
+}
+
+.phone_input_container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+}
+.login_form_btns {
+  background-color: rgb(61, 74, 223);
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+  padding-left: 18px;
+  font-size: 18px;
+  padding-right: 18px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+.login_form_continue_btn {
+  background-color: rgb(134, 134, 138);
+  color: rgb(41, 40, 40);
+}

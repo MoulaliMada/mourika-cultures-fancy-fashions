@@ -27,6 +27,9 @@ function Header() {
   const handleFavoriteClick = () => {
     navigate("/favorite");
   };
+  const handleLoginClick = () => {
+    navigate("/customer-login");
+  };
 
   return (
     <div className="header_bg_container">
@@ -35,14 +38,27 @@ function Header() {
         <div className="icons_container">
           <FaHome className="header_icons" onClick={handleHomeClick} />
           <MdOutlineFavorite
-            className="header_icons favorite"
+            className="header_icons"
             onClick={handleFavoriteClick}
           />
           <IoCart className="header_icons" onClick={handleCartClick} />
+          <button className="tablet_nav_btns" onClick={handleHomeClick}>
+            <FaHome className="tablet_header_icons" />
+            <p>Home</p>
+          </button>
+          <button className="tablet_nav_btns" onClick={handleFavoriteClick}>
+            <MdOutlineFavorite className="tablet_header_icons" />
+            <p>Favorites</p>
+          </button>
+          <button className="tablet_nav_btns" onClick={handleCartClick}>
+            <IoCart className="tablet_header_icons" />
+            <p>Cart</p>
+          </button>
+
           {isUserLogin ? (
             <CgProfile className="header_icons" onClick={handleHomeClick} />
           ) : (
-            <button className="login_btn" onClick={handleHomeClick}>
+            <button className="login_btn" onClick={handleLoginClick}>
               Login
             </button>
           )}

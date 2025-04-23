@@ -12,7 +12,7 @@
   padding-top: 8px;
 }
 .icons_container {
-  width: 80%;
+  flex: 1;
   display: flex;
   justify-content: space-around;
   color: white;
@@ -26,9 +26,6 @@
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
-}
-.login_btn:hover {
-  transform: scale(1.15);
 }
 
 .header_icons {
@@ -68,6 +65,9 @@
   width: 100%;
   left: 0;
 }
+.tablet_nav_btns {
+  display: none;
+}
 @media (min-width: 373px) {
   .logo {
     width: 100px;
@@ -92,8 +92,61 @@
     padding-right: 15px;
   }
 }
+@media (min-width: 768px) {
+  .tablet_nav_btns {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 0px;
+    border-color: white;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-style: solid;
+    padding-left: 11px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 3px;
+  }
+  .header_icons {
+    display: none;
+  }
+  .tablet_nav_btns p {
+    margin: 0px;
+  }
+  .tablet_header_icons {
+    font-size: 17px;
+    padding-right: 3px;
+  }
+  .header_container {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 3px;
+    padding-top: 8px;
+  }
+  .icons_container {
+    flex: 1;
+  }
+  .login_btn {
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .header_input_container {
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 @media (min-width: 1200px) {
   .logo {
     width: 180px;
+  }
+  .login_btn:hover {
+    transform: scale(1.15);
   }
 }
