@@ -1,0 +1,74 @@
+.logo {
+  width: 80px;
+}
+.header_container {
+  background-color: rgb(61, 74, 223);
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.icons_container {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.login_btn {
+  border-radius: 5px;
+  border: none;
+  color: rgb(61, 74, 223);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.login_btn:hover {
+  transform: scale(1.15);
+}
+
+.header_icons {
+  font-size: 21px;
+}
+.favorite {
+  color: rgb(255, 255, 255);
+}
+.header_input {
+  flex: 1;
+  border: none;
+  height: 25px;
+  font-size: 16px;
+  color: rgb(71, 69, 69);
+  padding-left: 5px;
+}
+
+.input_container {
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 5px;
+}
+.header_input_container {
+  background: linear-gradient(to bottom, rgb(61, 74, 223), #ffffff);
+  padding: 10px;
+}
+.IoSearch {
+  font-size: 23px;
+  padding-left: 5px;
+}
+.header_bg_container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+@media (min-width: 1200px) {
+  .logo {
+    width: 180px;
+  }
+}
